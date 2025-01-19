@@ -17,5 +17,11 @@ public class Main {
 
         arr.delete(1);
         arr.print();
+
+        arr.update(2, 99);
+        arr.print();
+
+        int result = arr.search(101);
+        System.out.println(result);
     }
 }

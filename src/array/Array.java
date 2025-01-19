@@ -98,4 +98,22 @@ public class Array<T> {
         }
         this.data[pos] = data;
     }
+
+    public int search(T key){
+        if(!this.is_valid){
+            System.out.println("Error: Invalid array!");
+            return -1;
+        }
+        if(this.count_element == -1){
+            System.out.println("Error: Array is empty!");
+            return -1;
+        }
+        for(int i = 0;i<=this.count_element;i++){
+            if(this.data[i] == key){
+                return i;
+            }
+        }
+        System.out.println("Error: Can't find this data in array!");
+        return -1;
+    }
 }
